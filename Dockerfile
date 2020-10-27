@@ -19,13 +19,10 @@ RUN apt-get update \
 COPY requirements.txt ./
 RUN pip3 install -r requirements.txt
 
-RUN mkdir /mlData
+RUN mkdir /SemanticSimDBcreator
 
-RUN mkdir /SemanticSimDBCreator
+VOLUME /SemanticSimDBcreator
 
-VOLUME /SemanticSimDBCreator
-
-VOLUME /mlData
 
 
 
